@@ -34,11 +34,16 @@ function DisplayData({ iteamfood}) {
                     </div>
     
                     <div className="image_div cont">
-                        <img src={image} width="200px" height="200px"/>
+                        <img src={image} width="200px" height="200px" alt="iamge"/>
                     </div>
     
                     <div className="button_div cont">
                         <button id="btn" onClick={() => {alert("New Closed")}}>Заказать</button>
+                    </div>
+
+                    <div id='displayNone'>
+                        {type}
+                        {Select}
                     </div>
                 </div>   
             )
