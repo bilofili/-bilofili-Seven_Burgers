@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main_block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    margin: 15px;
+    background-color: white ;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .cont {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    text-align: center;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .describe_div{
+    font-size: 1.3em;
+    height: 120px;
   }
-}
+
+  .price_div{
+    font-size: 1.6em;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+
+  .image_div{
+    opacity: 0.8;
+  }
+
+  .image_div:hover{
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  #btn {
+    padding: 8px 50px;
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .buttonF{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+
+  .btnF {
+    width: 160px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .flex_btn{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+  }
+
+  .aboutUs{
+    display: flex;
+    background-image: url("imageBur.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    height: auto;
+    width: 100%;
+  }
+
+  .ab_block{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 1px solid black;
+    color: white;
+  }
+
+  .ab_block p{
+    margin: 10px;
+  }
+
+
+  .ab_block2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    width: 50%;
+    margin: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 1px solid black;
+    color: white;
+  }
+
+  .ab_block2 button{
+    background-color: red;
+    padding: 6px 80px;
+    width: 70%;
+    margin-top: 80px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    color: white;
+  }
+
+  .ab_block2 p, h2{
+    margin: 10px;
+    text-align: center;
+  }
+
+  .btnSwitch{
+    background-color: red;
+    padding: 4px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 20px;
+    margin-top: 4px;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background: rgb(255,246,0);
+    background: linear-gradient(0deg, rgba(255,246,0,1) 23%, rgba(54,144,255,1) 78%);
+  }
+
+  header h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 2.8em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .aboutUs{
+    display: flex;
+    flex-direction: column;
+    background: rgb(255,246,0);
+    background: linear-gradient(0deg, rgba(255,246,0,1) 23%, rgba(54,144,255,1) 78%);
+    opacity: 1;
+    height: auto;
+    width: 100%;
+  }
+
+  .ab_block{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: 20px;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 1px solid black;
+    color: white;
+  }
+
+  .ab_block p{
+    margin: 10px;
+  }
+
+
+  .ab_block2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    width: auto;
+    margin: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 1px solid black;
+    color: white;
+  }
+
+  .ab_block2 button{
+    background-color: red;
+    padding: 6px 80px;
+    width: 80%;
+    margin-top: 80px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 30px;
+    border: none;
+    color: white;
+  }
+  }
+  
+ 
